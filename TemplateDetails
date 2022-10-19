@@ -1,0 +1,15 @@
+"The CloudFormation creates:
+    -Security Group with rules which are necessary for Anonos DataEmbassy (NGINX, ZOOKEEPER, KAFKA);
+    -VPC;
+    -Elastic IP creation and attaching to the instance;
+    -EC2 Instance with base OS as Ubuntu.
+
+During resource creation user should specify the following parameters:
+    -Key Pair name of an existing EC2 KeyPair to enable SSH access to the instance;
+    -EC2 instance type for the instance;
+    -The IP address range that can be used to SSH to the EC2 instance
+    -VPC id;
+    -Subnet id."
+    
+Script contains:
+    -The downloaded components from Anonos Docker Registry 
