@@ -22,14 +22,12 @@ Data Embassy® by Anonos® is the only technology that eliminates the tradeoff b
 ## Preparations
 
 Before getting started with offer, you must fulfill below requirements:
- 
-•	IAM permissions that must be assigned to an IAM role or IAM user used to deploy Data Embassy Offer
 
-•	You must have Key pair precreated in their AWS Account
+•	You must have Key pair precreated in your AWS Account, you might refer to ths link for key pair creation: 
     
 •	You must have DNS zone and domain name registered in AWS
 
-•	Consider having the Product License key
+•	You must have the Product License key
 
 
 
@@ -41,7 +39,7 @@ To install Anonos Data Embassy Offer from AWS Marketplace:
 
 2. You will be able to see Search Bar in top. 
 
-3. Search for the offer using name "Data Embassy", you will get list of offers listed down.
+3. Search for the offer using name **Data Embassy**, you will get list of offers listed down.
 
 4. For accurate search result, you can refine results using filters-
 
@@ -52,21 +50,15 @@ To install Anonos Data Embassy Offer from AWS Marketplace:
     |Pricing Model|**BYOL**|
     |Operating System|**All Linux/Unix, Ubuntu**|
     
-5. Now, click on offer, you will be redirected to offer homepage
+5. Now, click on offer and you will be redirected to offer homepage
 
-    ![image.](Media/img-1.png)
+    ![image.](Media/Product-overview.png)
 
-6. On the Subscribe to this software page, read the product license agreement and click **Continue to Subscribe**.
+6. On the Subscribe to this software page, read the product license agreement and click on **Continue to Subscribe**.
 
-    ![image.](Media/img-2.png)
+    ![image.](Media/Subscribe.png)
 
-7. In **Subscribe to this software** page, accept terms and conditions by clicking on **Accept Terms**
-
-    ![image.](Media/img-3.png)
-
-8. Wait for the completion of subscription process.
-
-    ![image.](Media/img-4.png)
+7. In **Subscribe to this software** page, accept terms and conditions by clicking on **Accept Terms**, Wait for the completion of subscription process.
 
    **Note**: **After confirmation of this process, you will be able to view "Effective date" and "Expiration date" against product details**
               
@@ -85,9 +77,9 @@ To install Anonos Data Embassy Offer from AWS Marketplace:
     
 11. Click **Continue to launch** button.
 
-    ![image.](Media/img-6.png)
+    ![image.](Media/ContinueLaunch.png)
 
-12. On the Launch this software page, do the following:
+12. On the Launch this software page, fill in the following details:
 
     a. In the Configuration Details section, review the product installation settings
     
@@ -103,16 +95,18 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
 
 14. Now, you will be redirected to **Create Stack** page.
 
-15. At the Specify template step of the wizard, the stack template settings are preconfigured and cannot be changed.
+15. At the Specify template step of the wizard, the stack template settings are preconfigured, click on **Next**
+
+       ![image.](Media/CreateStack.png)
 
 16. At the Specify stack details step of the wizard, configure the following stack settings:
 
     a. In the Stack name field, specify a name for the new stack.
         Specifying Stack Name
         
-       ![image.](Media/img-8.png)
+       ![image.](Media/StackName.png)
 
-    b. In the Instance Setup section, do the following:
+    b. In the **Instance Setup** section, do the following:
 
        Select the EC2 instance type for Data Embassy Offer.
 
@@ -122,7 +116,7 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
         
     For a key pair to be displayed in the Key pair for Data Embassy Offer, it must be created in the Amazon EC2 console. To learn how to create key pairs, refer to AWS         Documentation: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html
         
-       ![image.](Media/img-9.png)
+       ![image.](Media/Instance-setup.png)
 
 17. In the **Data Embassy Configuration** section, do the following:
 
@@ -134,11 +128,11 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
         
        Enter the product license key
        
-       ![image.](Media/img-10.png)
+       ![image.](Media/Dataembassy.png)
             
     **Note**: For details on how to obtain the license, contact Anonos representative for assistance at solutions@anonos.com
     
-18. In the **Network Configuration** section, do the following:
+18. In the **Network Configuration** section, fill in following details:
 
     a. Provide the IP Address range of the VPC
         
@@ -154,18 +148,16 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
         
        Specify IP Address range for SSH Access
          
-       ![image.](Media/img-11.png)
+       ![image.](Media/Network-Conf.png)
             
             
-19. At the **Configure stack options** step of the wizard, specify AWS tags, IAM role permissions and other additional settings for the stack. 
-
-    **Please note:** This step is completely optional.
+19. At the **Configure stack options** step of the wizard, specify AWS tags and scroll down and click on **Next**
 
 20. At the Review step of the wizard, do the following:
 
     a. Review the configured settings
     
-    b. Click Create stack
+    b. Click on Create stack
     
 21. Stack would be created in few minutes. 
 
@@ -190,35 +182,35 @@ https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-type-not-sup
         
        This is Elastic IP Address. This must be mapped with Wildcard DNS entry.
             
-       ![image.](Media/img-12.png)
+       ![image.](Media/Output.png)
 
  **Note**: DNS Propagation might take up to 10 minutes for DataEmbassy Webpage to show up. Refresh page occasionally to check whether the DataEmbassy login page is appearing
  
  
 23. Page like following would appear, now click on **Advanced** to open the advanced options, then proceed on to DataEmbassy login page by clicking on link that follows.
 
-     ![image.](Media/img-13.png)
+     ![image.](Media/Advanced.png)
      
-     ![image.](Media/img-14.png)
+     ![image.](Media/Webclientpageredirect.png)
 
 
 24. Login page would appear, enter the credentials.
 
      Username is **Admin** and password is **password**
      
-     ![image.](Media/img-15.png)
+     ![image.](Media/LoginPage.png)
      
 25. You will be asked to update password on your first login. Change the password and proceed on to **Submit** button.
 
-    ![image.](Media/img-16.png)
+    ![image.](Media/Updatepassword.png)
 
 26. **End user license agreement** page would appear, accept the license by clicking on **I Agree** 
 
-    ![image.](Media/img-17.png)
+    ![image.](Media/EULA.png)
 
 27. Now you will be redirected to DataEmbassy portal
  
-    ![image.](Media/img-18.png)
+    ![image.](Media/AnonosDashboard.png)
  
 
 
