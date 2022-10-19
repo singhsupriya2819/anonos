@@ -19,17 +19,12 @@ Data Embassy® by Anonos® is the only technology that eliminates the tradeoff b
 •	Controlled relinking to source data
 
 
-## Preparations
+## Minimal requirements
 
 Before getting started with offer, you must fulfill below requirements:
 
-•	You must have Key pair precreated in your AWS Account, you might refer to ths link for key pair creation: 
-    
-•	You must have DNS zone and domain name registered in AWS
-
-•	You must have the Product License key
-
-
+•	You must have Key pair precreated in your AWS Account, you might refer to ths link for key pair creation:                         https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html#having-ec2-create-your-key-pair
+  
 
 ### Deployment
 
@@ -54,7 +49,7 @@ To install Anonos Data Embassy Offer from AWS Marketplace:
 
     ![image.](Media/Product-overview.png)
 
-6. On the Subscribe to this software page, read the product license agreement and click on **Continue to Subscribe**.
+6. On the **Subscribe to this software page**, go through the product license agreement and click on **Continue to Subscribe**.
 
     ![image.](Media/Subscribe.png)
 
@@ -62,11 +57,11 @@ To install Anonos Data Embassy Offer from AWS Marketplace:
 
    **Note**: **After confirmation of this process, you will be able to view "Effective date" and "Expiration date" against product details**
               
-9. Now click on "Continue to Configuration" button
+8. Now click on **Continue to Configuration** button
 
-    ![image.](Media/img-5.png)
+    ![image.](Media/Continuetoconfiguration.png)
 
-10. On **Configure this Software** page, configure installation settings:
+9. On **Configure this Software** page, configure installation settings:
 
     a. From the Delivery Method drop-down list, choose **Anonos Data Embassy**
 
@@ -75,31 +70,25 @@ To install Anonos Data Embassy Offer from AWS Marketplace:
     c. From the Region drop-down list, select an AWS Region in which the EC2 instance running Data Embassy will reside.
     
     
-11. Click **Continue to launch** button.
+10. Click **Continue to launch** button.
 
     ![image.](Media/ContinueLaunch.png)
 
-12. On the Launch this software page, fill in the following details:
+11. On the Launch this software page, fill in the following details:
 
     a. In the Configuration Details section, review the product installation settings
     
     b. From the Choose Action drop-down list, select **Launch CloudFormation**
     
-    c. Click **Launch**. The Create stack wizard will open.
+    c. Click on **Launch** and you will be redirected to **Create Stack** page.
     
 Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFormation, a stack is a collection of AWS services and resources that you can manage as a single unit. You can create a stack in an AWS account, use resources included in the stack to run an application, or delete a stack if you no longer need it. For more information on AWS CloudFormation stacks, see AWS Documentation.
 
-13. In the Create stack wizard, you will create a stack
-
-    ![image.](Media/img-7.png)
-
-14. Now, you will be redirected to **Create Stack** page.
-
-15. At the Specify template step of the wizard, the stack template settings are preconfigured, click on **Next**
+12. At the Specify template step of the wizard, the stack template settings are preconfigured, click on **Next**
 
        ![image.](Media/CreateStack.png)
 
-16. At the Specify stack details step of the wizard, configure the following stack settings:
+13. At the Specify stack details step of the wizard, configure the following stack settings:
 
     a. In the Stack name field, specify a name for the new stack.
         Specifying Stack Name
@@ -118,7 +107,7 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
         
        ![image.](Media/Instance-setup.png)
 
-17. In the **Data Embassy Configuration** section, do the following:
+14. In the **Data Embassy Configuration** section, do the following:
 
     a. Provide the DNS to be mapped to the DataEmbassy Instance
         
@@ -132,7 +121,7 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
             
     **Note**: For details on how to obtain the license, contact Anonos representative for assistance at solutions@anonos.com
     
-18. In the **Network Configuration** section, fill in following details:
+15. In the **Network Configuration** section, fill in following details:
 
     a. Provide the IP Address range of the VPC
         
@@ -148,18 +137,18 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
         
        Specify IP Address range for SSH Access
          
-       ![image.](Media/Network-Conf.png)
+       ![image.](Media/NetworkConf.png)
             
             
-19. At the **Configure stack options** step of the wizard, specify AWS tags and scroll down and click on **Next**
+16. At the **Configure stack options** step of the wizard, specify AWS tags and scroll down and click on **Next**
 
-20. At the Review step of the wizard, do the following:
+17. At the Review step of the wizard, do the following:
 
     a. Review the configured settings
     
     b. Click on Create stack
     
-21. Stack would be created in few minutes. 
+18. Stack would be created in few minutes. 
 
  **Note**: If the Stack fails due to non-availability of Availability Zone, then you can launch an instance to an Availability Zone using the old launch wizard, new launch wizard, or using AWS CLI. Or, don't specify an Availability Zone in your request. If you don't specify an Availability Zone, Amazon EC2 chooses an Availability Zone for you that supports your instance type.
 
@@ -167,7 +156,7 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
 https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-type-not-supported-az-error/
 
     
-22. Once the Stack creation is complete, click on **Outputs** section, and review the URLs
+19. Once the Stack creation is complete, click on **Outputs** section, and review the URLs
 
      a.DataEmbassy
         
@@ -187,30 +176,32 @@ https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-type-not-sup
  **Note**: DNS Propagation might take up to 10 minutes for DataEmbassy Webpage to show up. Refresh page occasionally to check whether the DataEmbassy login page is appearing
  
  
-23. Page like following would appear, now click on **Advanced** to open the advanced options, then proceed on to DataEmbassy login page by clicking on link that follows.
+20. Page like following would appear, now click on **Advanced** to open the advanced options, then proceed on to DataEmbassy login page by clicking on link that follows.
 
      ![image.](Media/Advanced.png)
      
      ![image.](Media/Webclientpageredirect.png)
 
 
-24. Login page would appear, enter the credentials.
+21. Login page would appear, enter the credentials.
 
      Username is **Admin** and password is **password**
      
      ![image.](Media/LoginPage.png)
      
-25. You will be asked to update password on your first login. Change the password and proceed on to **Submit** button.
+22. You will be asked to update password on your first login. Change the password and proceed on to **Submit** button.
 
     ![image.](Media/Updatepassword.png)
 
-26. **End user license agreement** page would appear, accept the license by clicking on **I Agree** 
+23. **End user license agreement** page would appear, accept the license by clicking on **I Agree** 
 
     ![image.](Media/EULA.png)
 
-27. Now you will be redirected to DataEmbassy portal
+24. Now you will be redirected to DataEmbassy portal
  
     ![image.](Media/AnonosDashboard.png)
+    
+ 
  
 
 
