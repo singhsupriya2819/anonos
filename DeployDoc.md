@@ -113,6 +113,8 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
 
     a. In the Stack name field, specify a name for the new stack.
         Specifying Stack Name
+        
+       ![image.](Media/img-8.png)
 
     b. In the Instance Setup section, do the following:
 
@@ -123,6 +125,8 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
        ii. Select a key pair that will be used to authenticate against the backup appliance.
         
         For a key pair to be displayed in the Key pair for Data Embassy Offer, it must be created in the Amazon EC2 console. To learn how to create key pairs, see AWS         Documentation.
+        
+       ![image.](Media/img-9.png)
 
 17. In the **Data Embassy Configuration** section, do the following:
 
@@ -133,6 +137,8 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
     b. Provide License Key
         
        Enter the product license key
+       
+       ![image.](Media/img-10.png)
             
     **Note**: For details on how to obtain the license, contact Anonos representative for assistance at solutions@anonos.com
     
@@ -151,6 +157,8 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
     c. Provide IP Adress range for SSH access
         
          Specify IP Address range for SSH Access
+         
+       ![image.](Media/img-11.png)
             
             
 19. At the **Configure stack options** step of the wizard, specify AWS tags, IAM role permissions and other additional settings for the stack. 
@@ -186,26 +194,35 @@ https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-type-not-sup
         
         This is Elastic IP Address. This must be mapped with Wildcard DNS entry.
             
-         ![image.](Media/img-9.png)
+       ![image.](Media/img-12.png)
 
  **Note**: DNS Propagation might take up to 10 minutes for DataEmbassy Webpage to show up. Refresh page occasionally to check whether the DataEmbassy login page is appearing
  
  
 23. Page like following would appear, now click on **Advanced** to open the advanced options, then proceed on to DataEmbassy login page by clicking on link that follows.
 
+     ![image.](Media/img-13.png)
+     
+     ![image.](Media/img-14.png)
+
 
 24. Login page would appear, enter the credentials.
 
      Username is **Admin** and password is **password**
      
+     ![image.](Media/img-15.png)
+     
 25. You will be asked to update password on your first login. Change the password and proceed on to **Submit** button.
 
+    ![image.](Media/img-16.png)
 
 26. **End user license agreement** page would appear, accept the license by clicking on **I Agree** 
 
+    ![image.](Media/img-17.png)
+
 27. Now you will be redirected to DataEmbassy portal
  
- 
+    ![image.](Media/img-18.png)
  
 
 
