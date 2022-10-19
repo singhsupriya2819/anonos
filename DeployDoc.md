@@ -18,9 +18,6 @@ Data Embassy® by Anonos® is the only technology that eliminates the tradeoff b
 
 •	Controlled relinking to source data
 
-Table of content
-
-
 
 ## Preparations
 
@@ -57,11 +54,11 @@ To install Anonos Data Embassy Offer from AWS Marketplace:
     
 5. Now, click on offer, you will be redirected to offer homepage
 
-    ![image.](Media/img-1.1.png)
+    ![image.](Media/img-1.png)
 
-7. On the Subscribe to this software page, read the product license agreement and click **Continue to Subscribe**.
+6. On the Subscribe to this software page, read the product license agreement and click **Continue to Subscribe**.
 
-    ![image.](Media/img-2.1.png)
+    ![image.](Media/img-2.png)
 
 7. In **Subscribe to this software** page, accept terms and conditions by clicking on **Accept Terms**
 
@@ -85,7 +82,6 @@ To install Anonos Data Embassy Offer from AWS Marketplace:
     
     c. From the Region drop-down list, select an AWS Region in which the EC2 instance running Data Embassy will reside.
     
-       For more information on AWS Regions, see AWS Documentation.
     
 11. Click **Continue to launch** button.
 
@@ -122,9 +118,9 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
 
        i. The recommended EC2 instance type is t3x.large.
 
-       ii. Select a key pair that will be used to authenticate against the backup appliance.
+       ii.Select a key pair that will be used to authenticate against the backup appliance.
         
-        For a key pair to be displayed in the Key pair for Data Embassy Offer, it must be created in the Amazon EC2 console. To learn how to create key pairs, see AWS         Documentation.
+    For a key pair to be displayed in the Key pair for Data Embassy Offer, it must be created in the Amazon EC2 console. To learn how to create key pairs, refer to AWS         Documentation: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html
         
        ![image.](Media/img-9.png)
 
@@ -152,11 +148,11 @@ Data Embassy tools are installed using AWS CloudFormation stacks. In AWS CloudFo
     
     b. Provide IP Adress range of Subnet
         
-         Specify the subnet to which the Data Embassy Offer will be connected.
+       Specify the subnet to which the Data Embassy Offer will be connected.
             
     c. Provide IP Adress range for SSH access
         
-         Specify IP Address range for SSH Access
+       Specify IP Address range for SSH Access
          
        ![image.](Media/img-11.png)
             
@@ -181,18 +177,18 @@ https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-type-not-sup
     
 22. Once the Stack creation is complete, click on **Outputs** section, and review the URLs
 
-     a. DataEmbassy
+     a.DataEmbassy
         
-        This URL would take you to DataEmbassy Portal URL.
+       This URL would take you to DataEmbassy Portal URL.
           
                 
-     b. GettingStartedDocumentation
+     b.GettingStartedDocumentation
         
-        Using this URL, you will be redirected to Anonos DataEmbassy Documentation page
+       Using this URL, you will be redirected to Anonos DataEmbassy Documentation page
              
-     c. IPAddress
+     c.IPAddress
         
-        This is Elastic IP Address. This must be mapped with Wildcard DNS entry.
+       This is Elastic IP Address. This must be mapped with Wildcard DNS entry.
             
        ![image.](Media/img-12.png)
 
